@@ -28,4 +28,4 @@ Make sure you have [Docker](https://docs.docker.com/get-docker/) and Docker Comp
    ```bash
    git clone <your-repository-url>
    cd <repository-folder>
-   git checkout lesson-4# HW4_Alexander_Andersen
+   git checkout lesson-4
