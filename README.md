@@ -1,3 +1,4 @@
+Markdown
 # 🐳 Dockerized Django Project with PostgreSQL & Nginx
 
 This repository contains the solution for **Topic 4 Homework** of the Docker module. It demonstrates how to containerize a multi-service web application using Docker and Docker Compose.
@@ -29,3 +30,22 @@ Make sure you have [Docker](https://docs.docker.com/get-docker/) and Docker Comp
    git clone <your-repository-url>
    cd <repository-folder>
    git checkout lesson-4
+Start the containers in detached mode:
+
+Bash
+docker-compose up -d
+Access the application:
+Once the containers are successfully built and running, open your web browser and navigate to:
+👉 http://localhost
+
+Stopping the project:
+To stop the services and remove the containers, run:
+
+Bash
+docker-compose down
+📁 Key Project Files
+docker-compose.yml: Defines the configuration and relationships for the web, db, and nginx services.
+
+django/Dockerfile: Contains the instructions to build the custom Django application image.
+
+nginx/nginx.conf: The Nginx configuration file responsible for proxying traffic to the web service.
